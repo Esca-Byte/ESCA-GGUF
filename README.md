@@ -27,16 +27,8 @@ A lightweight, local web interface for running and chatting with GGUF Large Lang
     ```
 
 2.  **Install dependencies:**
-    It is recommended to use a virtual environment.
-    ```bash
-    # Create virtual environment
-    python -m venv venv
     
-    # Activate it
-    # Windows:
-    .\venv\Scripts\activate
-    # Linux/Mac:
-    source venv/bin/activate
+    ```bash
     
     # Install packages
     pip install -r requirements.txt
@@ -44,12 +36,7 @@ A lightweight, local web interface for running and chatting with GGUF Large Lang
 
     > **Note on Hardware Acceleration:** 
     > To enable GPU acceleration (CUDA, Metal, etc.), you must set specific environment variables before installing `llama-cpp-python`. Refer to the [llama-cpp-python documentation](https://github.com/abetlen/llama-cpp-python) for detailed instructions.
-    >
-    > *Example for NVIDIA GPU (Windows PowerShell):*
-    > ```powershell
-    > $env:CMAKE_ARGS = "-DGGML_CUDA=on"
-    > pip install llama-cpp-python --upgrade --force-reinstall --no-cache-dir
-    > ```
+    ```
 
 ## Usage
 
@@ -97,3 +84,4 @@ The backend provides a simple REST API:
 ## License
 
 [MIT License](LICENSE)
+
