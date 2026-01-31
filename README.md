@@ -1,4 +1,4 @@
-# Local GGUF Model Chat Interface
+# ESCA-GGUF
 
 A lightweight, local web interface for running and chatting with GGUF Large Language Models (LLMs) using `Flask` and `llama-cpp-python`. This project allows you to download models directly from Hugging Face, manage local model files, and chat with them using a clean web UI with streaming responses.
 
@@ -22,8 +22,8 @@ A lightweight, local web interface for running and chatting with GGUF Large Lang
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/Esca-Byte/ESCA-GGUF.git
+    cd ESCA-GGUF
     ```
 
 2.  **Install dependencies:**
@@ -39,7 +39,7 @@ A lightweight, local web interface for running and chatting with GGUF Large Lang
     source venv/bin/activate
     
     # Install packages
-    pip install Flask llama-cpp-python requests
+    pip install -r requirements.txt
     ```
 
     > **Note on Hardware Acceleration:** 
@@ -97,4 +97,3 @@ The backend provides a simple REST API:
 ## License
 
 [MIT License](LICENSE)
-#
